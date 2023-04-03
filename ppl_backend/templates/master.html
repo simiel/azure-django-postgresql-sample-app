@@ -216,40 +216,7 @@
 
 
 
-                    {% for job in jobs %}
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="{% static 'assets/job_img.svg' %}" alt="">
-                            </div>
-                            <div class="card-title">
-                                <h5>{{job.title}}</h5>
-                                <h6>{{job.level}}</h6>
-                            </div>
-                            <div class="card-description">
-                                <p>{{job.description}}</p>
-                            </div>
-                            <div class="card-details">
-                                <div class="card-location">
-                                    <p>Location: {{job.location}}</p>
-                                </div>
-                                <div class="card-salary">
-                                    <p>Salary: GHS {{job.salary}}</p>
-                                </div>
-                                <div class="card-deadline">
-                                    <img src="{% static 'assets/clock.svg' %}" alt="">
-                                    <p>Deadline:</p>
-                                </div>
-                                <div class="card-date">
-                                    <p>{{job.deadline}}</p>
-                                </div>
-                            </div>
-                            <div class="card-button">
-                                <button>
-                                    Apply
-                                </button>
-                            </div>
-                        </div>
-                    {% endfor %}
+                    
 
 
 
