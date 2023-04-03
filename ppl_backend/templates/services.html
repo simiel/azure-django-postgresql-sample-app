@@ -1,0 +1,74 @@
+{% extends 'master.html' %}
+{% load static %}
+
+
+    <!-- MAIN SECTION -->
+    {% block main %}
+    <main>
+        <div class="main-wrapper">
+            <div class="section-title-wrapper">
+                <h1>Services</h1>
+            </div>
+        </div>
+    </main>
+    {%endblock%}
+        
+    
+
+
+    {% block sections %}
+    <section class="recruitment">
+        <div class="section-wrapper">
+            <div class="section-image-wrapper">
+                <img src="{% static 'assets/Rectangle 120.png' %}" alt="">
+                <div class="img-outline"></div>
+            </div>
+            <div class="section-details-wrapper">
+                <div class="section-header">
+                    <h2>Recruitment Services</h2>
+                </div>
+                <div class="section-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quidem impedit perspiciatis culpa ex! Eaque assumenda error et ex nihil.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="management">
+        <div class="section-wrapper">
+            <div class="section-image-wrapper">
+                <img src="{% static 'assets/Rectangle 119.png'%}" alt="">
+                <div class="img-outline"></div>
+            </div>
+            <div class="section-details-wrapper">
+                <div class="section-header">
+                    <h2>Managed Employee Services</h2>
+                </div>
+                <div class="section-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quidem impedit perspiciatis culpa ex! Eaque assumenda error et ex nihil..</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="advisory">
+        <div class="section-wrapper">
+            <div class="section-image-wrapper">
+                <img src="{% static 'assets/Rectangle 121.png'%}" alt="">
+                <div class="img-outline"></div>
+            </div>
+            <div class="section-details-wrapper">
+                <div class="section-header">
+                    <h2>HR Advisory</h2>
+                </div>
+                <div class="section-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quidem impedit perspiciatis culpa ex! Eaque assumenda error et ex nihil.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {%endblock%}

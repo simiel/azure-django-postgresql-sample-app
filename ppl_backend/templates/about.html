@@ -1,0 +1,187 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnel Practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/home.css">
+    <script src="/static/home.js" defer></script>
+
+</head>
+
+<body>
+
+<!-- NAVIGATION BAR -->
+
+<header>
+
+    <div class="header-wrapper">
+
+        <div class="navbar-logo">
+            <a href="{% url 'home' %}"><img src="{% static 'assets/logo.png' %}" alt="Logo"></a>
+        </div>
+
+        <!-- nav -->
+        <nav>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="{% url 'about' %}">About Us</a></li>
+                <li class="nav-item"><a href="{% url 'services' %}">Services</a></li>
+                <li class="nav-item"><a href="{% url 'clients' %}">Clients</a></li>
+                <li class="nav-item"><a href="{% url 'jobs' %}">Jobs</a></li>
+            </ul>
+
+            <div class="navbar-calls">
+                <button type="button">Submit a CV</button>
+                <button type="button" class="login">Login</button>
+            </div>
+        </nav>
+
+
+
+        <div class="toggle-wrapper">
+            <button class="navbar-toggle" aria-label="Menu" id="open">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 16H28" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4 8H28" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4 24H28" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+
+    </div>
+</header>
+
+<div class="navbar-menu nav-close" id="nav">
+
+    <div class="close">
+        <img src="{% static 'assets/Cancel.svg' %}" alt="" id="close">
+    </div>
+
+    <div class="navbar-logo">
+        <a href="{% url 'home' %}"><img src="{% static 'logo.png' %}" alt="Logo"></a>
+    </div>
+
+    <div class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="{% url 'about' %}">About Us</a></li>
+                <li class="nav-item"><a href="{% url 'services' %}">Services</a></li>
+                <li class="nav-item"><a href="{% url 'clients' %}">Clients</a></li>
+                <li class="nav-item"><a href="{% url 'jobs' %}">Jobs</a></li>
+        </ul>
+
+        <div class="navbar-calls">
+            <button type="button">Submit a CV</button>
+            <button type="button" class="login">Login</button>
+        </div>
+    </div>
+    
+    
+</div>
+    
+
+
+    <!-- MAIN SECTION -->
+
+    <main>
+        <div class="main-wrapper">
+            <div class="section-title-wrapper">
+                <h1>About Us</h1>
+            </div>
+        </div>
+    </main>
+
+
+    
+
+
+    <section class="about">
+        <div class="section-wrapper">
+            
+            <div class="about-tab">
+                <div class="tab-title">
+                    <img src="./assets/ppl_mini.svg" alt="">
+                    <h3>Who We Are</h3>
+                </div>
+                <p>Personnel Practice provides human resource management solutions to businesses. It currently recruits for clients across the manufacturing, retail and mining sectors and has about 2,000 employees under management for these clients. We specialize in Executive Recruitment Services and Managed Employee Services (Agency).</p>
+            </div>
+            
+            <div class="about-tab">
+                <div class="tab-title">
+                    <img src="./assets/ppl_mini.svg" alt="">
+                    <h3>Why Us</h3>
+                </div>
+                <p>Personnel Practice provides human resource management solutions to businesses. It currently recruits for clients across the manufacturing, retail and mining sectors and has about 2,000 employees under management for these clients. We specialize in Executive Recruitment Services and Managed Employee Services (Agency).</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="leadership">
+        <div class="section-wrapper">
+            <div class="section-title-wrapper">
+                <h2>Leadership</h2>
+            </div>
+            <div class="leadership-card-wrapper">
+                <div class="leader-card yaw">
+                    <h3>Yaw Benneh-Amponsah<br>CEO</h3>
+
+                    <p>Yaw Benneh-Amponsah is the Executive Director of Personnel Practice. He has over 20 years experience in Human Resource Management and Finance. Prior to founding Personnel Practice, he served as an HR Officer with Stanley Mining Services Ltd and West African Drilling Services Ltd, and then served as Chief Finance Officer with Geodrill Limited with responsibility for all non-operational functions including human resources. He holds a BSc Business Administration from the University of Ghana and PGDip Financial Strategy from Said Business School, Oxford University, UK.</p>
+                </div>
+                <div class="leader-card order">
+                    <h3>Yaw Benneh</h3>
+
+                    <p>Yaw Benneh-Amponsah is the Executive Director of Personnel Practice. He has over 20 years experience in Human Resource Management and Finance. Prior to founding Personnel Practice, he served as an HR Officer with Stanley Mining Services Ltd and West African Drilling Services Ltd, and then served as Chief Finance Officer with Geodrill Limited with responsibility for all non-operational functions including human resources. He holds a BSc Business Administration from the University of Ghana and PGDip Financial Strategy from Said Business School, Oxford University, UK.</p>
+                </div>
+                <div class="leader-card">
+                    <h3>Yaw Benneh</h3>
+
+                    <p>Yaw Benneh-Amponsah is the Executive Director of Personnel Practice. He has over 20 years experience in Human Resource Management and Finance. Prior to founding Personnel Practice, he served as an HR Officer with Stanley Mining Services Ltd and West African Drilling Services Ltd, and then served as Chief Finance Officer with Geodrill Limited with responsibility for all non-operational functions including human resources. He holds a BSc Business Administration from the University of Ghana and PGDip Financial Strategy from Said Business School, Oxford University, UK.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="section-wrapper">
+            <div class="footer-section-wrapper">
+                <h2>Find Us</h2>
+                <p>P.O. Box CT 5699, Accra, Ghana</p>
+                <p>GD-196-6737</p>
+                <div class="button">
+                    <button>
+                        <i></i>
+                        Google Coodinates here
+                    </button>
+                    <p>Google Coordinates here</p>
+                </div>
+                <p>First Floor Junction House, 112 University Farm Road, Adenta, Greater Accra
+                <p>Ghana</p>
+            </div>
+            <div class="footer-section-wrapper">
+                <button>Contact Us</button>
+                <p><a href="">ppl@mersoncapital.com</a></p>
+                <p><a href="">+233 00 000 0000</a></p>
+                <p><a href="">+233 00 000 0000</a></p>
+            </div>
+            
+        </div>
+        <div class="copyright">&copy; Personnel Practive Limited. All rights reserved</div>
+    </footer>
+
+
+
+
+    <script src="home.js"></script>
+</body>
+</html>

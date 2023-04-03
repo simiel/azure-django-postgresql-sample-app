@@ -1,0 +1,450 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnel Practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/home.css">
+    <script src="/static/home.js" defer></script>
+
+</head>
+
+<body>
+
+<!-- NAVIGATION BAR -->
+
+
+
+    {% block header %}
+    <header>
+
+        <div class="header-wrapper">
+
+            <div class="navbar-logo">
+                <a href="{% url 'home' %}"><img src="{% static 'assets/logo.png' %}" alt="Logo"></a>
+            </div>
+
+            <!-- nav -->
+            <nav>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="{% url 'about' %}">About Us</a></li>
+                    <li class="nav-item"><a href="{% url 'services' %}">Services</a></li>
+                    <li class="nav-item"><a href="{% url 'clients' %}">Clients</a></li>
+                    <li class="nav-item"><a href="{% url 'jobs' %}">Jobs</a></li>
+                </ul>
+    
+                <div class="navbar-calls">
+                    <button type="button">Submit a CV</button>
+                    <button type="button" class="login">Login</button>
+                </div>
+            </nav>
+
+
+
+            <div class="toggle-wrapper">
+                <button class="navbar-toggle" aria-label="Menu" id="open">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 16H28" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 8H28" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 24H28" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="navbar-menu nav-close" id="nav">
+
+        <div class="close">
+            <img src="{% static 'assets/Cancel.svg' %}" alt="" id="close">
+        </div>
+
+        <div class="navbar-logo">
+            <a href="{% url 'home' %}"><img src="{% static 'assets/logo.png' %}" alt="Logo"></a>
+        </div>
+
+        <div class="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="{% url 'about' %}">About Us</a></li>
+                <li class="nav-item"><a href="{% url 'services' %}">Services</a></li>
+                <li class="nav-item"><a href="{% url 'clients' %}">Clients</a></li>
+                <li class="nav-item"><a href="{% url 'jobs' %}">Jobs</a></li>
+            </ul>
+
+            <div class="navbar-calls">
+                <button type="button">Submit a CV</button>
+                <button type="button" class="login">Login</button>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    {% endblock %}
+    
+
+
+
+
+    {% block main %}
+
+    <!-- MAIN SECTION -->
+
+    <main>
+        <div class="main-wrapper">
+            <div class="section-title-wrapper">
+                <!-- <p> -->
+                    <p class="hero-text">Whether you're looking to outsource HR Management or looking for a job, Personnel Practice has what you need</p>
+                <!-- </p> -->
+            </div>
+
+            <div class="featured-wrapper">
+                <div class="featured-header">
+                    <h4>Featured</h4>
+                </div>
+                <div class="featured-cards-container slide">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="{% static 'assets/job_img.svg' %}" alt="">
+                        </div>
+                        <div class="card-title">
+                            <h5>Website Developer</h5>
+                            <h6>Full time: Mid-Senior</h6>
+                        </div>
+                        <div class="card-description">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil molestias nemo quasi?</p>
+                        </div>
+                        <div class="card-details">
+                            <div class="card-location">
+                                <p><span>Location:</span> Remote</p>
+                            </div>
+                            <div class="card-salary">
+                                <p><span>Salary:</span> GHS 8000</p>
+                            </div>
+                            <div class="card-deadline">
+                                <img src="{% static 'assets/clock.svg' %}" alt="">
+                                <p>Deadline:</p>
+                            </div>
+                            <div class="card-date">
+                                <p>24th February, 2023</p>
+                            </div>
+                        </div>
+                        <div class="card-button">
+                            <button>
+                                Apply
+                            </button>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="{% static 'assets/job_img.svg' %}" alt="">
+                        </div>
+                        <div class="card-title">
+                            <h5>Website Developer</h5>
+                            <h6>Full time: Mid-Senior</h6>
+                        </div>
+                        <div class="card-description">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil molestias nemo quasi?</p>
+                        </div>
+                        <div class="card-details">
+                            <div class="card-location">
+                                <p><span>Location:</span> Remote</p>
+                            </div>
+                            <div class="card-salary">
+                                <p><span>Salary:</span> GHS 8000</p>
+                            </div>
+                            <div class="card-deadline">
+                                <img src="{% static 'assets/clock.svg' %}" alt="">
+                                <p>Deadline:</p>
+                            </div>
+                            <div class="card-date">
+                                <p>24th February, 2023</p>
+                            </div>
+                        </div>
+                        <div class="card-button">
+                            <button>
+                                Apply
+                            </button>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="{% static 'assets/job_img.svg' %}" alt="">
+                        </div>
+                        <div class="card-title">
+                            <h5>Website Developer</h5>
+                            <h6>Full time: Mid-Senior</h6>
+                        </div>
+                        <div class="card-description">
+                            <p>Lorem ipsum dolor sit, </p>
+                        </div>
+                        <div class="card-details">
+                            <div class="card-location">
+                                <p>Location: Remote</p>
+                            </div>
+                            <div class="card-salary">
+                                <p>Salary: GHS 8000</p>
+                            </div>
+                            <div class="card-deadline">
+                                <i>clock</i>
+                                <p>deadline:</p>
+                            </div>
+                            <div class="card-date">
+                                <p>24th February, 2023</p>
+                            </div>
+                        </div>
+                        <div class="card-button">
+                            <button>
+                                Apply
+                            </button>
+                        </div>
+                    </div>
+
+
+
+
+                    {% for job in jobs %}
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="{% static 'assets/job_img.svg' %}" alt="">
+                            </div>
+                            <div class="card-title">
+                                <h5>{{job.title}}</h5>
+                                <h6>{{job.level}}</h6>
+                            </div>
+                            <div class="card-description">
+                                <p>{{job.description}}</p>
+                            </div>
+                            <div class="card-details">
+                                <div class="card-location">
+                                    <p>Location: {{job.location}}</p>
+                                </div>
+                                <div class="card-salary">
+                                    <p>Salary: GHS {{job.salary}}</p>
+                                </div>
+                                <div class="card-deadline">
+                                    <img src="{% static 'assets/clock.svg' %}" alt="">
+                                    <p>Deadline:</p>
+                                </div>
+                                <div class="card-date">
+                                    <p>{{job.deadline}}</p>
+                                </div>
+                            </div>
+                            <div class="card-button">
+                                <button>
+                                    Apply
+                                </button>
+                            </div>
+                        </div>
+                    {% endfor %}
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    {% endblock %}
+
+
+
+
+
+    {% block sections %}
+
+    <section class="clients">
+        <div class="section-wrapper">
+            <div class="section-title-wrapper">
+                <h2>Our Clients</h2>
+            </div>
+            <div class="client-tabs-wrapper">
+                <div class="client-logo">
+                    <img src="{% static 'assets/geodrill.png'%}" alt="">
+                </div>
+                <div class="client-logo">
+                    <img src="{% static 'assets/pwmining.png'%}" alt="">
+                 </div>
+                <div class="client-logo">
+                    <img src="{% static 'assets/electromart.png'%}" alt="">
+                </div>
+               <div class="client-logo">
+                    <img src="{% static 'assets/somotex.png'%}" alt="">
+                </div>
+                <div class="client-logo">
+                    <img src="{% static 'assets/outotec.png'%}" alt="">
+                </div>
+                <div class="client-logo">
+                    <img src="{% static 'assets/polysacks.png'%}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        
+    
+    <section class="recruitment">
+        <div class="section-wrapper">
+            <div class="section-image-wrapper">
+                <img src="{% static 'assets/Rectangle 120.png'%}" alt="">
+                <div class="img-outline"></div>
+            </div>
+            <div class="section-details-wrapper">
+                <div class="section-header">
+                    <h2>Recruitment Services</h2>
+                </div>
+                <div class="section-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quidem impedit perspiciatis culpa ex! Eaque assumenda error et ex nihil.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="management">
+        <div class="section-wrapper">
+            <div class="section-image-wrapper">
+                <img src="{% static 'assets/Rectangle 119.png'%}" alt="">
+                <div class="img-outline"></div>
+            </div>
+            <div class="section-details-wrapper">
+                <div class="section-header">
+                    <h2>Managed Employee Services</h2>
+                </div>
+                <div class="section-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quidem impedit perspiciatis culpa ex! Eaque assumenda error et ex nihil..</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="advisory">
+        <div class="section-wrapper">
+            <div class="section-image-wrapper">
+                <img src="{% static 'assets/Rectangle 121.png'%}" alt="">
+                <div class="img-outline"></div>
+            </div>
+            <div class="section-details-wrapper">
+                <div class="section-header">
+                    <h2>HR Advisory</h2>
+                </div>
+                <div class="section-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quidem impedit perspiciatis culpa ex! Eaque assumenda error et ex nihil.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonial">
+        <div class="section-wrapper">
+            <h2>Testimonials</h2>
+
+            <div class="testimonial-card-wrapper slide">
+                <div class="testimonial-card">
+                    <img class="quote-img" src="" alt="">
+                    <p>The customer service is exceptional, very great service</p>
+                    <div class="quote-profile">
+                        <img class="quote-profile-img" src="{% static 'assets/profile.png'%}" alt="">
+                        <h6 class="quote-profile-name">Frank Owusu Boateng</h6>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <img class="quote-img" src="" alt="">
+                    <p>The customer service is exceptional, very great service</p>
+                    <div class="quote-profile">
+                        <img class="quote-profile-img" src="{% static 'assets/profile.png'%}" alt="">
+                        <h6 class="quote-profile-name">Frank Owusu Boateng</h6>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <img class="quote-img" src="" alt="">
+                    <p>The customer service is exceptional, very great service</p>
+                    <div class="quote-profile">
+                        <img class="quote-profile-img" src="{% static 'assets/profile.png'%}" alt="">
+                        <h6 class="quote-profile-name">Frank Owusu Boateng</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact">
+        <div class="section-wrapper">
+            <div class="section-title-wrapper">
+                <h2>Contact Us</h2>
+            </div>
+
+            <div class="form">
+                <form action="">
+                    <input type="text" placeholder="Full Name" name="name" id="">
+                    <input type="email" placeholder="Email" name="email" id="">
+                    <textarea placeholder="Message" name="message" id="" rows="5"></textarea>
+                    <input class="submit" type="submit" name="" id="">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    {% endblock %}
+
+
+
+
+    {% block footer%}
+    <footer>
+        <div class="section-wrapper">
+            <div class="footer-section-wrapper">
+                <h2>Find Us</h2>
+                <p>P.O. Box CT 5699, Accra, Ghana</p>
+                <p>GD-196-6737</p>
+                <div class="button">
+                    <button>
+                        <i></i>
+                        Google Coodinates here
+                    </button>
+                    <p>Google Coordinates here</p>
+                </div>
+                <p>First Floor Junction House, 112 University Farm Road, Adenta, Greater Accra
+                <p>Ghana</p>
+            </div>
+            <div class="footer-section-wrapper">
+                <button>Contact Us</button>
+                <p><a href="">ppl@mersoncapital.com</a></p>
+                <p><a href="">+233 00 000 0000</a></p>
+                <p><a href="">+233 00 000 0000</a></p>
+            </div>
+            
+        </div>
+        <div class="copyright">&copy; Personnel Practive Limited. All rights reserved</div>
+    </footer>
+
+    {% endblock %}
+
+
+
+
+
+    <script src="home.js"></script>
+</body>
+</html>
